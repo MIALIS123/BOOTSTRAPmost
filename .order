@@ -8,6 +8,13 @@ index.html-Inicio - Al iniciar Sesión se visualiza el navbar con los siguientes
 1.new-product-Crear Producto
 
 2.list-products.html- Listado de Productos
+  -Tabla 
+  -Producto 
+  -Detalle 
+  -Monto 
+  -Cantidad 
+  -Acciones 
+  
 
 3.Cerrar Sesión - Esto no es una pagina, es un botón.
 
@@ -54,3 +61,5 @@ D-Delate - Eliminar
         </form>
     </div>
 </nav>
+
+...
