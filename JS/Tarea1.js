@@ -1,7 +1,7 @@
-# BOOTSTRAPmost
 
 
-Tarea JS trate de utilizar funciones para encapsular su codigo . 
+
+Tarea JS trate de utilizar funciones para encapsular su codigo.
 
 
 //1-Crear una función que salude
@@ -101,4 +101,4 @@ function puedeVotar(edad, nacionalidad)
 let edad = parseInt(prompt("Ingresa tu edad:"));
 
 // Función para verificar si la persona está en edad escolar o es adulto mayor
-function verificarEdad(edad) {
+function verificarEdad(edad) { }
