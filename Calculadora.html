@@ -21,20 +21,21 @@
             <form id="Formulario">
                 <div class="form-group">
                     <label for="">Ingrese el primer valor</label>
-                    <input type="text" class="form-control" name="" id="valor1" aria-describedby="helpId" placeholder="">
+                    <input type="text" class="form-control" name="" id="num1" aria-describedby="helpId" placeholder="">
                     <small id="helpId" class="form-text text-muted">Help text</small>
                 </div>
 
                 <div class="form-group">
                     <label for="">Ingrese el primer valor</label>
-                    <input type="text" class="form-control" name="" id="valor2" aria-describedby="helpId" placeholder="">
+                    <input type="text" class="form-control" name="" id="num2" aria-describedby="helpId" placeholder="">
                     <small id="helpId" class="form-text text-muted">Help text</small>
                 </div>
                                   <!--En onclick va una function () -->
-                <button type="submit" class="btn btn-primary btn-block" onclick="calcular()">Guardar Información</button>
+                <button type="submit" class="btn btn-primary btn-block" onclick="sumar(event)">Sumar</button>
+                <button type="submit" class="btn btn-danger btn-block" onclick="restar(event)">Restar</button>
             </form>
 
-            <div id="valorrespuesta">
+            <div id="resultado">
                 Aqui va la respuesta 
 
             </div>
