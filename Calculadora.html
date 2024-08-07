@@ -30,16 +30,28 @@
                     <input type="text" class="form-control" name="" id="num2" aria-describedby="helpId" placeholder="">
                     <small id="helpId" class="form-text text-muted">Help text</small>
                 </div>
-                                  <!--En onclick va una function () -->
-                <button type="submit" class="btn btn-primary btn-block" onclick="sumar(event)">Sumar</button>
-                <button type="submit" class="btn btn-danger btn-block" onclick="restar(event)">Restar</button>
-            </form>
 
+                <div class="form-group">
+                    <label for="">Operación</label>
+                    <select class="form-control" name="" id="operaciones">
+                        <!-- <option value="+">Suma</option> L aopcion de valu es importante    -->
+                        <option value="+">Suma</option>
+                        <option value="-">Resta</option>
+                        <option value="*">Multiplicación</option>
+                        <option value="/">Divisiones</option>
+
+                    </select>
+                </div>
+
+                <!--En onclick va una function () -->
+                <button type="submit" class="btn btn-primary btn-block" onclick="calculadora2(event)">Calcular</button>
+            
+            </form>
             <div id="resultado">
-                Aqui va la respuesta 
+                Aqui va la respuesta
 
             </div>
-
+           
         </div>
 
 
