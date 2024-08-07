@@ -8,7 +8,11 @@ mostrar_navbar();
 //contenedor.innerHTML = contenido
 
 function mostrar_navbar() {
-    let nuevaopcion = "Pagina de Ventas"
+    let opcion1 = "Inicio"
+    let opcion2 = "Listado de Productos"
+    let opcion3 = "Crear Producto"
+    let opcion4 = "Pagina de Ventas"
+    
     let contenedor = document.getElementById('v_navbar')
     let plantilla = ` 
      
@@ -20,16 +24,16 @@ function mostrar_navbar() {
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">${opcion1} <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="list-products.html">Listado de Productos</a>
+                        <a class="nav-link" href="list-products.html">${opcion2} </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="new-product.html">Crear Producto</a>
+                        <a class="nav-link" href="new-product.html">${opcion3}</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">${nuevaopcion}</a>
+                        <a class="nav-link" href="#">${opcion4}</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
