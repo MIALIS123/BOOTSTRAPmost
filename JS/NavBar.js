@@ -1,12 +1,17 @@
-navegacion();
+
+//Componente NavBar
+
+
+mostrar_navbar();
 // let contenedor = id
-//let contenido = "Hola Mundo"
+//let plantilla = "Hola Mundo"
 //contenedor.innerHTML = contenido
 
-function navegacion() {
-    let v_navbar = document.getElementById('v_navbar')
-    let contenido = ` 
-      <nav class="navbar navbar-expand-sm navbar-light bg-light" id="v_navbar">
+function mostrar_navbar() {
+    let nuevaopcion = "Pagina de Ventas"
+    let contenedor = document.getElementById('v_navbar')
+    let plantilla = ` 
+     
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -22,6 +27,9 @@ function navegacion() {
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="new-product.html">Crear Producto</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">${nuevaopcion}</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -39,8 +47,8 @@ function navegacion() {
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                 </form>
             </div>
-        </nav>
+       
     `
 
-    console.log(contenido)
+    contenedor.innerHTML = plantilla
 }
