@@ -14,57 +14,43 @@
 </head>
 
 <body>
-    <div class="container mt-4">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light" id="v_navbar">
-           
-        </nav>
-
-        <!-- 
-        1. Crear Formulario con bootstrap
-    -Producto 
-    -Detalle 
-    -Monto 
-    -Cantidad 
-    -Acciones 
-    -Botón 
-    -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" id="V_NavBar">
+               
+    </nav>
+    
+    <!-- -Crear Formulario Centrado  
+    -Producto
+    -Detalle
+    -Monto
+    -Cantidad
+    -Boton -->
+    <!-- margin 0 auto -->
+     <!-- flex: row columns justify content center  -->
 
     <div class="container d-flex justify-content-center">
-
-        <div class="col-md-12">
-           <h2 class="text-center">Formulario de Productos</h2>
-        
-        <form>
+        <div class="col-md-6 "> 
+          <h2 class="text-center">Formulario de Producto</h2>
+          <form>
             <div class="form-group">
-               
-                <label for="producto" >Producto</label>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="Producto" placeholder="Ingrese el nombre del producto">
-                </div>
-                <label for="detalle">Detalle</label>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="Detalle" placeholder="Ingrese el detalle del producto">
-                </div>
-                <label for="monto">Monto</label>
-                <div class="form-group">
-                    <input type="number" class="form-control" id="Monto" placeholder="Ingrese el monto del producto">
-                </div>
-                <label for="acciones">Cantidad</label>
-                <div class="form-group">
-                    <input type="number" class="form-control" id="Cantidad" placeholder="Ingrese la cantidad del producto">
-                </div>
+              <label for="producto">Producto</label>
+              <input type="text" class="form-control" id="producto" placeholder="Ingrese el nombre del producto">
             </div>
-            
-            <div class="form-group row">
-                <div class="offset-sm-2 col-sm-10">
-                    <button type="submit" class="btn btn-primary">Agregar</button>
-                </div>
+            <div class="form-group">
+              <label for="detalle">Detalle</label>
+              <input type="text" class="form-control" id="detalle" placeholder="Ingrese el detalle del producto">
             </div>
-        </form>
-
+            <div class="form-group">
+              <label for="monto">Monto</label>
+              <input type="number" class="form-control" id="monto" placeholder="Ingrese el monto del producto">
+            </div>
+            <div class="form-group">
+              <label for="cantidad">Cantidad</label>
+              <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad del producto">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+          </form>
         </div>
-    </div>
-
+      </div>
 
 
 
