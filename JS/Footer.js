@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', ev => {
 const Opciones_Footer = [
     { Nombre: "Términos y Condiciones", Ruta: "term.html", Activo: true },
     { Nombre: "Política de Privacidad", Ruta: "privacidad.html", Activo: true },
-    { Nombre: "Contacto", Ruta: "contacto.html", Activo: true },
-    { Nombre: "Footer", Ruta: "contacto.html", Activo: true }
+    { Nombre: "Contacto", Ruta: "contacto.html", Activo: true }
+   
 ]
 
 //Función que muestra el footer
