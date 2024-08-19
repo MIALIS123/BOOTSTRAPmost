@@ -46,10 +46,21 @@ const Heroes = [
 
 function Mostrar_LigaDeLaJusticia(Heroes) {  //Esta es la Firma
     // let Contenedor //A.
+    let Contenedor = document.getElementById('contenedorHeroes')
     // let Plantilla  //B.
- 
+    let Plantilla = ""
     // //C.
+    Heroes.forEach(element => {
+      Plantilla +=  `
+     <div>
+                    <h2>${element.nombre}</h2>
+                    <p>${element.bio}</p>
+                    <img src="${element.img}" alt="${element.nombre}">
+                </div>
+    `
+    });
     
     // Contenedor.innerHTML = Plantilla //D.
-   alert(Heroes)
+   Contenedor.innerHTML = Plantilla
+   console.log(Heroes) //  JSON.string Esto permite que la alerta salga toda la info de la función
 }
